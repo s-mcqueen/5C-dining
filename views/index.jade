@@ -1,0 +1,67 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  h1.schooltitle cmc
+  h2 brunch
+  ol
+  - for (var i = 0; i < cmc.brunch.length; ++i)
+    li= cmc.brunch[i]
+
+  h2 dinner
+  ol
+  - for (var i = 0; i < cmc.dinner.length; ++i)
+    li= cmc.dinner[i]
+
+
+  h1.schooltitle pitzer
+  h2 brunch
+  ol
+  - for (var i = 0; i < pitzer.brunch.length; ++i)
+    li= pitzer.brunch[i]
+
+  h2 dinner
+  ol
+  - for (var i = 0; i < pitzer.dinner.length; ++i)
+    li= pitzer.dinner[i]
+
+
+  //- h1 scripps
+  //- ol
+  //- - for (var i = 0; i < 1000; ++i)
+  //-     li= scripps[i]
+
+  h1.schooltitle mudd
+  h2 brunch
+  ol
+  - for (var i = 0; i < mudd.brunch.length; ++i)
+    li= mudd.brunch[i]
+
+  h2 dinner
+  ol
+  - for (var i = 0; i < mudd.dinner.length; ++i)
+    li= mudd.dinner[i]
+
+  h1.schooltitle frary
+  h2 brunch
+  ol
+  - for (var i = 0; i < frary.brunch.length; ++i)
+    li= frary.brunch[i]
+
+  h2 dinner
+  ol
+  - for (var i = 0; i < frary.dinner.length; ++i)
+    li= frary.dinner[i]
+
+  h1.schooltitle frank
+  h2 brunch
+  ol
+  - for (var i = 0; i < frank.brunch.length; ++i)
+    li= frank.brunch[i]
+
+  h2 dinner
+  ol
+  - for (var i = 0; i < frank.dinner.length; ++i)
+    li= frank.dinner[i]
