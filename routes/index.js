@@ -25,8 +25,7 @@ exports.index = function(req, res){
 
       var cmc = parsed.collins[today];
       var pitzer = parsed.pitzer[today];
-      // Scripps currently has API issues
-      // var scripps = parsed.scripps[today];
+      var scripps = parsed.scripps[today];
       var mudd = parsed.mudd[today];
       var frary = parsed.frary[today];
       var frank = parsed.frank[today];
@@ -35,7 +34,7 @@ exports.index = function(req, res){
         {
           title: 'Dining Halls',
           cmc: cmc,
-          // scripps: scripps,
+          scripps: scripps,
           pitzer: pitzer,
           mudd: mudd,
           frank: frank,
