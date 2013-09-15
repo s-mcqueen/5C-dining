@@ -25,6 +25,7 @@ exports.index = function(req, res){
 
       var cmc = parsed.collins[today];
       var pitzer = parsed.pitzer[today];
+      // Scripps currently has API issues
       // var scripps = parsed.scripps[today];
       var mudd = parsed.mudd[today];
       var frary = parsed.frary[today];
