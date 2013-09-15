@@ -26,17 +26,17 @@ block content
   ol
   - for (var i = 0; i < pitzer.dinner.length; ++i)
     li= pitzer.dinner[i]
+  if scripps
+    h1.schooltitle scripps
+    h2 brunch
+    ol
+    - for (var i = 0; i < scripps.brunch.length; ++i)
+      li= scripps.brunch[i]
 
-  h1.schooltitle scripps
-  h2 brunch
-  ol
-  - for (var i = 0; i < scripps.brunch.length; ++i)
-    li= scripps.brunch[i]
-
-  h2 dinner
-  ol
-  - for (var i = 0; i < scripps.dinner.length; ++i)
-    li= scripps.dinner[i]
+    h2 dinner
+    ol
+    - for (var i = 0; i < scripps.dinner.length; ++i)
+      li= scripps.dinner[i]
 
 
   h1.schooltitle mudd
