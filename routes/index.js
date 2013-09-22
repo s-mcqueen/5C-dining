@@ -12,15 +12,16 @@ exports.index = function(req, res){
       var parsed = JSON.parse(body);
 
       var days = {
-        1: "monday",
-        2: "tuesday",
-        3: "wednesday",
-        4: "thursday",
-        5: "friday",
-        6: "saturday",
-        7: "sunday"
+        0: "sun",
+        1: "mon",
+        2: "tue",
+        3: "wed",
+        4: "thu",
+        5: "fri",
+        6: "sat"
       }
 
+      console.log(moment().day())
       var today = days[moment().day()];
 
       var cmc = parsed.collins[today];
@@ -32,7 +33,7 @@ exports.index = function(req, res){
 
       res.render('index',
         {
-          title: 'Dining Halls',
+          title: '5C dining Halls',
           cmc: cmc,
           scripps: scripps,
           pitzer: pitzer,
