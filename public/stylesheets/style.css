@@ -1,5 +1,4 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -7,6 +6,38 @@ a {
   color: #00B7FF;
 }
 
-.schooltitle {
-    color: red;
+#links{
+    position: fixed;
+    top: 80px;
+
 }
+
+#container {
+    padding: 50px;
+    padding-left: 120px;
+}
+
+
+.cmc {
+    color: #981b32;
+}
+
+.pitzer {
+    color: #f28b20;
+}
+
+.scripps {
+    color: #33735b;
+}
+
+.mudd {
+    color: #995500;
+}
+
+.pomona {
+    color: #214293;
+
+}
+
+
+
