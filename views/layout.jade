@@ -11,5 +11,24 @@ html
       ga('create', 'UA-44242430-1', 'five-c-dining.herokuapp.com');
       ga('send', 'pageview');
 
+    script(type="text/javascript")
+      var _usersnapconfig = {
+        apiKey: '47d1893c-d58b-4d4f-9f44-0badf36e57bb',
+        valign: 'bottom',
+        halign: 'right',
+        tools: ["pen", "highlight", "note"],
+        lang: 'en',
+        commentBox: true,
+        emailBox: true
+      }; 
+      (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//api.usersnap.com/usersnap.js';
+        var x = document.getElementsByTagName('head')[0];
+        x.appendChild(s);
+      })();
+
   body
     block content
