@@ -4,7 +4,7 @@ block content
 
   #links
     h1= title
-    | <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2F5cdining.com%2F&amp;width=250&amp;height=35&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=592424720796913" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:35px;" allowTransparency="true"></iframe>
+    | <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2F5cdining.com%2F&amp;width=200&amp;height=35&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=592424720796913" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:35px;" allowTransparency="true"></iframe>
     | </br>
 
     a(class='cmc', href='#cmc') cmc
@@ -30,23 +30,29 @@ block content
 
           if cmc.breakfast
             h2 breakfast
+            h5 7:30am - 9:30am
             ol
             - for (var i = 0; i < cmc.breakfast.length; ++i)
               li= cmc.breakfast[i]
 
           if cmc.brunch
             h2 brunch
+            h5 10:30am - 12:30pm
+
             ol
             - for (var i = 0; i < cmc.brunch.length; ++i)
               li= cmc.brunch[i]
 
           if cmc.lunch
             h2 lunch
+            h5 11am - 1pm
             ol
             - for (var i = 0; i < cmc.lunch.length; ++i)
               li= cmc.lunch[i]
 
           h2 dinner
+          //- TODO: ON WEEKENDS THIS CHANGES (4:30 - 6:30)
+          h5 5pm - 7pm
           ol
           - for (var i = 0; i < cmc.dinner.length; ++i)
             li= cmc.dinner[i]
@@ -58,23 +64,28 @@ block content
 
           if pitzer.breakfast
             h2 breakfast
+            h5 7:30am - 10am
             ol
             - for (var i = 0; i < pitzer.breakfast.length; ++i)
               li= pitzer.breakfast[i]
 
           if pitzer.brunch
             h2 brunch
+            h5 10:30am - 12:30pm
             ol
             - for (var i = 0; i < pitzer.brunch.length; ++i)
               li= pitzer.brunch[i]
 
           if pitzer.lunch
             h2 lunch
+            h5 11:15am - 1:30pm
             ol
             - for (var i = 0; i < pitzer.lunch.length; ++i)
               li= pitzer.lunch[i]
 
           h2 dinner
+          //- TODO: ON WEEKENDS THIS CHANGES (5-6:30)
+          h5 5pm - 7:30pm
           ol
           - for (var i = 0; i < pitzer.dinner.length; ++i)
             li= pitzer.dinner[i]
@@ -85,27 +96,34 @@ block content
           h1.scripps scripps
 
           if scripps.breakfast
+
             h2 breakfast
+            h5 7:30am - 10am
             ol
             - for (var i = 0; i < scripps.breakfast.length; ++i)
               li= scripps.breakfast[i]
 
           if scripps.brunch
             h2 brunch
+            h5 10:45am - 1pm
             ol
             - for (var i = 0; i < scripps.brunch.length; ++i)
               li= scripps.brunch[i]
 
           if scripps.lunch
             h2 lunch
+            h5 11:15am - 1:30pm
             ol
             - for (var i = 0; i < scripps.lunch.length; ++i)
               li= scripps.lunch[i]
 
           h2 dinner
+          //- TODO: ON WEEKENDS THIS CHANGES
+          h5 4:45pm - 7pm
           ol
           - for (var i = 0; i < scripps.dinner.length; ++i)
             li= scripps.dinner[i]
+
     #right.large-6.columns
       if mudd
         #mudd.school
@@ -114,51 +132,63 @@ block content
 
           if mudd.breakfast
             h2 breakfast
+            h5 7:30am - 9:30am
             ol
             - for (var i = 0; i < mudd.breakfast.length; ++i)
               li= mudd.breakfast[i]
 
           if mudd.brunch
             h2 brunch
+            h5 10:30am - 12:45pm
             ol
             - for (var i = 0; i < mudd.brunch.length; ++i)
               li= mudd.brunch[i]
 
           if mudd.lunch
             h2 lunch
+            h5 11:15am - 1pm
             ol
             - for (var i = 0; i < mudd.lunch.length; ++i)
               li= mudd.lunch[i]
 
           h2 dinner
+          //- TODO: ON WEEKENDS THIS CHANGES
+          h5 5pm - 7pm
           ol
           - for (var i = 0; i < mudd.dinner.length; ++i)
             li= mudd.dinner[i]
 
       if frary
+        //- TODO: frary has weird hours...
+
         #frary.school
           | <a name="frary"> </a>
           h1.pomona frary
 
           if frary.breakfast
             h2 breakfast
+            h5 7:30am - 10am
             ol
             - for (var i = 0; i < frary.breakfast.length; ++i)
               li= frary.breakfast[i]
 
           if frary.brunch
             h2 brunch
+            h5 11am - 1pm
             ol
             - for (var i = 0; i < frary.brunch.length; ++i)
               li= frary.brunch[i]
 
           if frary.lunch
             h2 lunch
+            h5 11:30am - 1pm
             ol
             - for (var i = 0; i < frary.lunch.length; ++i)
               li= frary.lunch[i]
 
           h2 dinner
+          //- TODO: ON WEEKENDS THIS CHANGES (5-6:30)
+          h5 5pm - 8pm
           ol
           - for (var i = 0; i < frary.dinner.length; ++i)
             li= frary.dinner[i]
@@ -170,23 +200,27 @@ block content
 
           if frank.breakfast
             h2 breakfast
+            h5 7:30am - 10am
             ol
             - for (var i = 0; i < frank.breakfast.length; ++i)
               li= frank.breakfast[i]
 
           if frank.brunch
             h2 brunch
+            h5 11am - 1pm
             ol
             - for (var i = 0; i < frank.brunch.length; ++i)
               li= frank.brunch[i]
 
           if frank.lunch
             h2 lunch
+            h5 11:30am - 1pm
             ol
             - for (var i = 0; i < frank.lunch.length; ++i)
               li= frank.lunch[i]
 
           h2 dinner
+          h5 5pm - 7pm
           ol
           - for (var i = 0; i < frank.dinner.length; ++i)
             li= frank.dinner[i]
