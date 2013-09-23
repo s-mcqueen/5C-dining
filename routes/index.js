@@ -41,7 +41,7 @@ exports.index = function(req, res){
       if(mm < 10) {
           mm='0'+mm
       }
-      var title = '5C dining halls  --  ' +  mm + '/' + dd + '/' +yyyy;
+      var title = mm + '/' + dd + '/' +yyyy;
 
       res.render('index',
         {

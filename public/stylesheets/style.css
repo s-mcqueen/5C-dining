@@ -9,14 +9,18 @@ a {
 #links{
     position: fixed;
     top: 80px;
+    left: 10px;
+    font-size: 1.6em;
 
 }
 
-#container {
+#left {
     padding: 50px;
-    padding-left: 120px;
 }
 
+#right {
+    padding: 50px;
+}
 
 .cmc {
     color: #981b32;

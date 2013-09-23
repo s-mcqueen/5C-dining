@@ -16,176 +16,177 @@ block content
     a(class='pomona', href='#frank') frank
 
 
-  #container
-    | <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2F5cdining.com%2F&amp;width=450&amp;height=35&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=592424720796913" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+  .row
+    #left.large-6.columns
+      | <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2F5cdining.com%2F&amp;width=450&amp;height=35&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=592424720796913" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
 
-    h1= title
+      h1= title
 
-    if cmc
-      #cmc.school
-        | <a name="cmc"> </a>
-        h1.cmc cmc
+      if cmc
+        #cmc.school
+          | <a name="cmc"> </a>
+          h1.cmc cmc
 
-        if cmc.breakfast
-          h2 breakfast
+          if cmc.breakfast
+            h2 breakfast
+            ol
+            - for (var i = 0; i < cmc.breakfast.length; ++i)
+              li= cmc.breakfast[i]
+
+          if cmc.brunch
+            h2 brunch
+            ol
+            - for (var i = 0; i < cmc.brunch.length; ++i)
+              li= cmc.brunch[i]
+
+          if cmc.lunch
+            h2 lunch
+            ol
+            - for (var i = 0; i < cmc.lunch.length; ++i)
+              li= cmc.lunch[i]
+
+          h2 dinner
           ol
-          - for (var i = 0; i < cmc.breakfast.length; ++i)
-            li= cmc.breakfast[i]
+          - for (var i = 0; i < cmc.dinner.length; ++i)
+            li= cmc.dinner[i]
 
-        if cmc.brunch
-          h2 brunch
+      if pitzer
+        #pitzer.school
+          | <a name="pitzer"> </a>
+          h1.pitzer pitzer
+
+          if pitzer.breakfast
+            h2 breakfast
+            ol
+            - for (var i = 0; i < pitzer.breakfast.length; ++i)
+              li= pitzer.breakfast[i]
+
+          if pitzer.brunch
+            h2 brunch
+            ol
+            - for (var i = 0; i < pitzer.brunch.length; ++i)
+              li= pitzer.brunch[i]
+
+          if pitzer.lunch
+            h2 lunch
+            ol
+            - for (var i = 0; i < pitzer.lunch.length; ++i)
+              li= pitzer.lunch[i]
+
+          h2 dinner
           ol
-          - for (var i = 0; i < cmc.brunch.length; ++i)
-            li= cmc.brunch[i]
+          - for (var i = 0; i < pitzer.dinner.length; ++i)
+            li= pitzer.dinner[i]
 
-        if cmc.lunch
-          h2 lunch
+      if scripps
+        #scripps.school
+          | <a name="scripps"> </a>
+          h1.scripps scripps
+
+          if scripps.breakfast
+            h2 breakfast
+            ol
+            - for (var i = 0; i < scripps.breakfast.length; ++i)
+              li= scripps.breakfast[i]
+
+          if scripps.brunch
+            h2 brunch
+            ol
+            - for (var i = 0; i < scripps.brunch.length; ++i)
+              li= scripps.brunch[i]
+
+          if scripps.lunch
+            h2 lunch
+            ol
+            - for (var i = 0; i < scripps.lunch.length; ++i)
+              li= scripps.lunch[i]
+
+          h2 dinner
           ol
-          - for (var i = 0; i < cmc.lunch.length; ++i)
-            li= cmc.lunch[i]
+          - for (var i = 0; i < scripps.dinner.length; ++i)
+            li= scripps.dinner[i]
+    #right.large-6.columns
+      if mudd
+        #mudd.school
+          | <a name="mudd"> </a>
+          h1.mudd mudd
 
-        h2 dinner
-        ol
-        - for (var i = 0; i < cmc.dinner.length; ++i)
-          li= cmc.dinner[i]
+          if mudd.breakfast
+            h2 breakfast
+            ol
+            - for (var i = 0; i < mudd.breakfast.length; ++i)
+              li= mudd.breakfast[i]
 
-    if pitzer
-      #pitzer.school
-        | <a name="pitzer"> </a>
-        h1.pitzer pitzer
+          if mudd.brunch
+            h2 brunch
+            ol
+            - for (var i = 0; i < mudd.brunch.length; ++i)
+              li= mudd.brunch[i]
 
-        if pitzer.breakfast
-          h2 breakfast
+          if mudd.lunch
+            h2 lunch
+            ol
+            - for (var i = 0; i < mudd.lunch.length; ++i)
+              li= mudd.lunch[i]
+
+          h2 dinner
           ol
-          - for (var i = 0; i < pitzer.breakfast.length; ++i)
-            li= pitzer.breakfast[i]
+          - for (var i = 0; i < mudd.dinner.length; ++i)
+            li= mudd.dinner[i]
 
-        if pitzer.brunch
-          h2 brunch
+      if frary
+        #frary.school
+          | <a name="frary"> </a>
+          h1.pomona frary
+
+          if frary.breakfast
+            h2 breakfast
+            ol
+            - for (var i = 0; i < frary.breakfast.length; ++i)
+              li= frary.breakfast[i]
+
+          if frary.brunch
+            h2 brunch
+            ol
+            - for (var i = 0; i < frary.brunch.length; ++i)
+              li= frary.brunch[i]
+
+          if frary.lunch
+            h2 lunch
+            ol
+            - for (var i = 0; i < frary.lunch.length; ++i)
+              li= frary.lunch[i]
+
+          h2 dinner
           ol
-          - for (var i = 0; i < pitzer.brunch.length; ++i)
-            li= pitzer.brunch[i]
+          - for (var i = 0; i < frary.dinner.length; ++i)
+            li= frary.dinner[i]
 
-        if pitzer.lunch
-          h2 lunch
+      if frank
+        #frary.school
+          | <a name="frank"> </a>
+          h1.pomona frank
+
+          if frank.breakfast
+            h2 breakfast
+            ol
+            - for (var i = 0; i < frank.breakfast.length; ++i)
+              li= frank.breakfast[i]
+
+          if frank.brunch
+            h2 brunch
+            ol
+            - for (var i = 0; i < frank.brunch.length; ++i)
+              li= frank.brunch[i]
+
+          if frank.lunch
+            h2 lunch
+            ol
+            - for (var i = 0; i < frank.lunch.length; ++i)
+              li= frank.lunch[i]
+
+          h2 dinner
           ol
-          - for (var i = 0; i < pitzer.lunch.length; ++i)
-            li= pitzer.lunch[i]
-
-        h2 dinner
-        ol
-        - for (var i = 0; i < pitzer.dinner.length; ++i)
-          li= pitzer.dinner[i]
-
-    if scripps
-      #scripps.school
-        | <a name="scripps"> </a>
-        h1.scripps scripps
-
-        if scripps.breakfast
-          h2 breakfast
-          ol
-          - for (var i = 0; i < scripps.breakfast.length; ++i)
-            li= scripps.breakfast[i]
-
-        if scripps.brunch
-          h2 brunch
-          ol
-          - for (var i = 0; i < scripps.brunch.length; ++i)
-            li= scripps.brunch[i]
-
-        if scripps.lunch
-          h2 lunch
-          ol
-          - for (var i = 0; i < scripps.lunch.length; ++i)
-            li= scripps.lunch[i]
-
-        h2 dinner
-        ol
-        - for (var i = 0; i < scripps.dinner.length; ++i)
-          li= scripps.dinner[i]
-
-    if mudd
-      #mudd.school
-        | <a name="mudd"> </a>
-        h1.mudd mudd
-
-        if mudd.breakfast
-          h2 breakfast
-          ol
-          - for (var i = 0; i < mudd.breakfast.length; ++i)
-            li= mudd.breakfast[i]
-
-        if mudd.brunch
-          h2 brunch
-          ol
-          - for (var i = 0; i < mudd.brunch.length; ++i)
-            li= mudd.brunch[i]
-
-        if mudd.lunch
-          h2 lunch
-          ol
-          - for (var i = 0; i < mudd.lunch.length; ++i)
-            li= mudd.lunch[i]
-
-        h2 dinner
-        ol
-        - for (var i = 0; i < mudd.dinner.length; ++i)
-          li= mudd.dinner[i]
-
-    if frary
-      #frary.school
-        | <a name="frary"> </a>
-        h1.pomona frary
-
-        if frary.breakfast
-          h2 breakfast
-          ol
-          - for (var i = 0; i < frary.breakfast.length; ++i)
-            li= frary.breakfast[i]
-
-        if frary.brunch
-          h2 brunch
-          ol
-          - for (var i = 0; i < frary.brunch.length; ++i)
-            li= frary.brunch[i]
-
-        if frary.lunch
-          h2 lunch
-          ol
-          - for (var i = 0; i < frary.lunch.length; ++i)
-            li= frary.lunch[i]
-
-        h2 dinner
-        ol
-        - for (var i = 0; i < frary.dinner.length; ++i)
-          li= frary.dinner[i]
-
-    if frank
-      #frary.school
-        | <a name="frank"> </a>
-        h1.pomona frank
-
-        if frank.breakfast
-          h2 breakfast
-          ol
-          - for (var i = 0; i < frank.breakfast.length; ++i)
-            li= frank.breakfast[i]
-
-        if frank.brunch
-          h2 brunch
-          ol
-          - for (var i = 0; i < frank.brunch.length; ++i)
-            li= frank.brunch[i]
-
-        if frank.lunch
-          h2 lunch
-          ol
-          - for (var i = 0; i < frank.lunch.length; ++i)
-            li= frank.lunch[i]
-
-        h2 dinner
-        ol
-        - for (var i = 0; i < frank.dinner.length; ++i)
-          li= frank.dinner[i]
+          - for (var i = 0; i < frank.dinner.length; ++i)
+            li= frank.dinner[i]
 
