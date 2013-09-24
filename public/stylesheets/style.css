@@ -6,9 +6,13 @@ a {
   color: #00B7FF;
 }
 
+li {
+    line-height: 1.4;
+}
+
 #links{
     position: fixed;
-    top: 46px;
+    top: 121px;
     left: 10px;
     font-size: 1.6em;
 
@@ -20,12 +24,18 @@ a {
     }
 }
 
+#input-area {
+    margin-top: 50px;
+}
+
 #left {
-    padding: 50px;
+    padding: 20px;
+    padding-bottom: 50px;
 }
 
 #right {
-    padding: 50px;
+    padding: 20px;
+    padding-bottom: 50px;
 }
 
 .cmc {
