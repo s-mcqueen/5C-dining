@@ -52,19 +52,30 @@ exports.index = function(req, res){
       var mm = date.getMonth()+1; //January is 0!
       var title = mm + '/' + dd;
 
-      getTemp(function(temp){
-        res.render('index',
-          {
-            title: title,
-            temp: temp,
-            cmc: cmc,
-            scripps: scripps,
-            pitzer: pitzer,
-            mudd: mudd,
-            frank: frank,
-            frary: frary
-          });
-      })
+      res.render('index',
+        {
+          title: title,
+          cmc: cmc,
+          scripps: scripps,
+          pitzer: pitzer,
+          mudd: mudd,
+          frank: frank,
+          frary: frary
+        });
+
+      // getTemp(function(temp){
+      //   res.render('index',
+      //     {
+      //       title: title,
+      //       temp: temp,
+      //       cmc: cmc,
+      //       scripps: scripps,
+      //       pitzer: pitzer,
+      //       mudd: mudd,
+      //       frank: frank,
+      //       frary: frary
+      //     });
+      // })
     }
   })
 };
