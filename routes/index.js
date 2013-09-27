@@ -18,6 +18,7 @@ function getTemp(callback) {
       var kelvinTemp = parsed.main.temp;
       // convert from kelvin
       var fTemp = parseInt((1.8 * (kelvinTemp - 273.15)) + 32);
+      console.log(fTemp);
       callback(fTemp);
     }
   });
@@ -52,30 +53,19 @@ exports.index = function(req, res){
       var mm = date.getMonth()+1; //January is 0!
       var title = mm + '/' + dd;
 
-      res.render('index',
-        {
-          title: title,
-          cmc: cmc,
-          scripps: scripps,
-          pitzer: pitzer,
-          mudd: mudd,
-          frank: frank,
-          frary: frary
-        });
-
-      // getTemp(function(temp){
-      //   res.render('index',
-      //     {
-      //       title: title,
-      //       temp: temp,
-      //       cmc: cmc,
-      //       scripps: scripps,
-      //       pitzer: pitzer,
-      //       mudd: mudd,
-      //       frank: frank,
-      //       frary: frary
-      //     });
-      // })
+      getTemp(function(temp){
+        res.render('index',
+          {
+            title: title,
+            temp: temp,
+            cmc: cmc,
+            scripps: scripps,
+            pitzer: pitzer,
+            mudd: mudd,
+            frank: frank,
+            frary: frary
+          });
+      })
     }
   })
 };
