@@ -2,11 +2,9 @@ extends layout
 
 block content
   .row
-    p Note than
-      | <a href="http://five-c-dining.herokuapp.com/"> five-c-dining.herokuapp.com </a>
-      is the same as
-      | <a href="http://5cdining.com/"> 5CDining.com.</a> << Bookmark this one.
-  script(type="text/javascript").
+    p Excuse our bugs. This service is still under active development! - 
+      a(href="https://github.com/s-mcqueen") Sean
+    script(type="text/javascript").
       $(function() {
           $('#filter').fastLiveFilter('.searchList');
       });
@@ -30,7 +28,7 @@ block content
     | </br>
     | </br>
 
-    //- h4= temp + '°'
+    h4= temp + '°'
 
   .row
 
