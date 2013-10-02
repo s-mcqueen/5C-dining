@@ -18,8 +18,9 @@ function getTemp(callback) {
       var kelvinTemp = parsed.main.temp;
       // convert from kelvin
       var fTemp = parseInt((1.8 * (kelvinTemp - 273.15)) + 32);
-      console.log(fTemp);
-      callback(fTemp);
+      callback(fTemp.toString() + '°');
+    } else {
+      callback('');
     }
   });
 }
