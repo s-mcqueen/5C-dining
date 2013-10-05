@@ -1,21 +1,28 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-/*    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-*/    background-image:url('../images/white_wall.png');
+    margin: 0px;
+    font: 1.0em "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image:url('../images/white_wall.png');
 }
+
+/*@media only screen and (max-device-width: 480px) {
+    .gridItem {
+        width: 600px;
+    }
+}
+*/
 
 #header {
     width: 100%;
-    height: 200px;
-}
-
-#title {
-    width: 200px;
-    margin: auto;
+    height: 50px;
+    background-color: #ccc;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 #title-text {
-    color: #eee;
+    color: #333;
+    font-size: 36px;
+    margin: 0px;
 }
 
 #container {
@@ -31,6 +38,10 @@ body {
     width: 400px;
     color: white;
     opacity:0.9;
+}
+
+.gridItem .data {
+    padding: 10px;
 }
 
 #collins {
