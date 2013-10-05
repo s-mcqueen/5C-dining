@@ -9,6 +9,7 @@
     "express": "3.3.1",
     "jade": "*",
     "request": "*",
-    "moment": "*"
+    "moment": "*",
+    "ejs": "~0.8.4"
   }
 }
