@@ -22,35 +22,34 @@ function update (current_day, current_time) {
 
 
   $.each(dataSet.collins.today.current_time, function(i, item) {
-    items.push('<li>'.item.'</li>');
+    items.push('<li>'+item+'</li>');
   });
   $('div#collins').append( items.join('') );
   items = [];
   $.each(dataSet.scripps.today.current_time, function(i, item) {
-    items.push('<li>'.item.'</li>');
+    items.push('<li>'+item+'</li>');
   });
   $('div#scripps').append( items.join('') );
   items = [];
   $.each(dataSet.mudd.today.current_time, function(i, item) {
-    items.push('<li>'.item.'</li>');
+    items.push('<li>'+item+'</li>');
   });
   $('div#mudd').append( items.join('') );
   items = [];
   $.each(dataSet.pitzer.today.current_time, function(i, item) {
-    items.push('<li>'.item.'</li>');
+    items.push('<li>'+item+'</li>');
   });
   $('div#pitzer').append( items.join('') );
   items = [];
   $.each(dataSet.frary.today.current_time, function(i, item) {
-    items.push('<li>'.item.'</li>');
+    items.push('<li>'+item+'</li>');
   });
   $('div#frary').append( items.join('') );
   items = [];
   $.each(dataSet.frank.today.current_time, function(i, item) {
-    items.push('<li>'.item.'</li>');
+    items.push('<li>'+item+'</li>');
   });
   $('div#frank').append( items.join('') );
-
 
 }
 $(document).ready(function() {
