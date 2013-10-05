@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "5C-Dining",
+  "version": "0.0.1-12",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -11,5 +11,9 @@
     "request": "*",
     "moment": "*",
     "ejs": "~0.8.4"
+  },
+  "subdomain": "fivecdining",
+  "engines": {
+    "node": "0.10.x"
   }
 }

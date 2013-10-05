@@ -1,4 +1,12 @@
 var dataSet = {};
+
+  var $container = $('#container');
+  $container.masonry({
+    columnWidth: 30,
+    itemSelector: '.gridItem',
+    transitionDuration: '0.6',
+    isFitWidth: true
+  });
 var days = {
   0: "sun",
   1: "mon",
@@ -13,48 +21,58 @@ function update (current_day, current_time) {
   var today = days[current_day];
   var items = [];
 
-  $('div#collins').html('');
-  $('div#scripps').html('');
-  $('div#mudd').html('');
-  $('div#pitzer').html('');
-  $('div#frary').html('');
-  $('div#frank').html('');
+  $('div#collins div.data').html('');
+  $('div#scripps div.data').html('');
+  $('div#mudd div.data').html('');
+  $('div#pitzer div.data').html('');
+  $('div#frary div.data').html('');
+  $('div#frank div.data').html('');
 
 
-  $.each(dataSet.collins.today.current_time, function(i, item) {
+  $.each(dataSet["collins"][today][current_time], function(i, item) {
     items.push('<li>'+item+'</li>');
   });
-  $('div#collins').append( items.join('') );
+  $('div#collins div.data').html( items.join('') );
   items = [];
-  $.each(dataSet.scripps.today.current_time, function(i, item) {
+
+  $.each(dataSet["scripps"][today][current_time], function(i, item) {
     items.push('<li>'+item+'</li>');
   });
-  $('div#scripps').append( items.join('') );
+  $('div#scripps div.data').html( items.join('') );
   items = [];
-  $.each(dataSet.mudd.today.current_time, function(i, item) {
+  $.each(dataSet["mudd"][today][current_time], function(i, item) {
     items.push('<li>'+item+'</li>');
   });
-  $('div#mudd').append( items.join('') );
+  $('div#mudd div.data').html( items.join('') );
   items = [];
-  $.each(dataSet.pitzer.today.current_time, function(i, item) {
+  $.each(dataSet["pitzer"][today][current_time], function(i, item) {
     items.push('<li>'+item+'</li>');
   });
-  $('div#pitzer').append( items.join('') );
+  $('div#pitzer div.data').html( items.join('') );
   items = [];
-  $.each(dataSet.frary.today.current_time, function(i, item) {
+  $.each(dataSet["frary"][today][current_time], function(i, item) {
     items.push('<li>'+item+'</li>');
   });
-  $('div#frary').append( items.join('') );
+  $('div#frary div.data').html( items.join('') );
   items = [];
-  $.each(dataSet.frank.today.current_time, function(i, item) {
+  $.each(dataSet["frank"][today][current_time], function(i, item) {
     items.push('<li>'+item+'</li>');
   });
-  $('div#frank').append( items.join('') );
+  $('div#frank div.data').html( items.join('') );
+
+    $container.masonry({
+    columnWidth: 30,
+    itemSelector: '.gridItem',
+    transitionDuration: '0.6',
+    isFitWidth: true
+  });
 
 }
 $(document).ready(function() {
+
+
   $.ajax({
-      url: "http://dining-api.herokuapp.com/all",
+      url: "http://localhost:3000/api",
       success: function(data) {
         if (data) {
           dataSet = data;
